@@ -24,7 +24,7 @@ module.exports = class
     for a in [@min..@max]
       (->
         while @n isnt 1
-          if math.mod @n, 2 is 0
+          if math.bitAnd(@n, 1) is 0
             @n = @even @
           else
             @n = @odd @
