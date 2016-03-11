@@ -5,13 +5,13 @@ describe 'the Collatz class', ->
 
   it 'can be initialized with no parameters', ->
     c = new Collatz()
-    expect(c.min).to.equal Collatz.prototype.min
-    expect(c.max).to.equal Collatz.prototype.max
+    expect(c.min).to.equal Collatz::min
+    expect(c.max).to.equal Collatz::max
 
   it 'can be initialized with one parameters', ->
     argone = 100
     c = new Collatz argone
-    expect(c.min).to.equal Collatz.prototype.min
+    expect(c.min).to.equal Collatz::min
     expect(c.max).to.equal argone
 
   it 'can be initialized with two parameters', ->
